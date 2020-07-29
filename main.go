@@ -22,8 +22,8 @@ func GetPort() string {
 	var port = os.Getenv("PORT")
 
 	if port == "" {
-		port = "4747"
-		fmt.Println("INFO: No PORT environment variable detected, defaulting to " + port)
+		port = "8080"
+		fmt.Println("INFO: No PORT environment variable detected, Starting Server at port " + port)
 	}
 	return ":" + port
 }

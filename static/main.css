@@ -1,3 +1,10 @@
-body{
+body {
   background-color: #F7F7F7;
+}
+
+.header {
+  margin: 0 auto;
+  background: rgb(121, 82, 176);
+  background: linear-gradient(90deg, rgba(121, 82, 176, 1) 48%, rgba(0, 212, 255, 0.9471988624551383) 93%);
+  text-align: center;
 }
