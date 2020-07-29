@@ -18,10 +18,6 @@ func main() {
 	}
 }
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello. This is our first Go web app on Heroku!")
-}
-
 func GetPort() string {
 	var port = os.Getenv("PORT")
 
