@@ -8,7 +8,9 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", handler)
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/", fs)
+
 	fmt.Println("listening...")
 	err := http.ListenAndServe(GetPort(), nil)
 	if err != nil {
