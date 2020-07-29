@@ -2,9 +2,34 @@ body {
   background-color: #F7F7F7;
 }
 
-.header {
-  margin: 0 auto;
-  background: rgb(121, 82, 176);
-  background: linear-gradient(90deg, rgba(121, 82, 176, 1) 48%, rgba(0, 212, 255, 0.9471988624551383) 93%);
+.main-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 15px;
+  letter-spacing: 0.3em;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
   text-align: center;
 }
