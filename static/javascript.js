@@ -1,1 +1,1 @@
-console.log('hello world');
+document.addEventListener("DOMContentLoaded", () => { const a = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0); 0 < a.length && a.forEach(a => { a.addEventListener("click", () => { const b = a.dataset.target, c = document.getElementById(b); a.classList.toggle("is-active"), c.classList.toggle("is-active") }) }) });
